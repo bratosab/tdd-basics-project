@@ -17,7 +17,7 @@ To run the code and execute jest runner, add to package.json a new script
 
 ## Step 6
 Add types for Jest
-`npm i @types/jest --save-dev`
+`npm i @types/jest -D`
 Create a `jsconfig.json` file with following type acquisiton :
 ```json
 {

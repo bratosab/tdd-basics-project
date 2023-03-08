@@ -1,25 +1,5 @@
-class Stack {
-  constructor() {
-    this.top = -1;
-    this.items = {};
-  }
+const { Stack } = require("../src/Stack");
 
-  get peek() {
-    return this.items[this.top];
-  }
-
-  push(value) {
-    this.top += 1;
-    this.items[this.top] = value;
-  }
-
-  pop() {
-    const item = this.items[this.top]
-    delete this.items[this.top]
-    this.top -= 1;
-    return item
-  }
-}
 
 describe('My Stack', () => {
   let stack;
