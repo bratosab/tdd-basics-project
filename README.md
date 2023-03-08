@@ -1,5 +1,33 @@
 # JavaScript TDD Project
 
-Example repo for [JavaScript Test-Driven Development with Jest](https://youtu.be/Jv2uxzhPFl4). 
+## Step 1 
+`npm init @vitejs/app` then select vanilla JS project.
 
-Challenge: Implement additional tests in the `test/stack.test.js` file. 
+## Step 2 
+`npm i jest`
+
+## Step 3
+Create `/test` directory with a `stack.test.js` file.
+
+## Step 4
+To run the code and execute jest runner, add to package.json a new script 
+```json
+"test": "jest --watchAll --verbose"
+```
+
+## Step 6
+Add types for Jest
+`npm i @types/jest --save-dev`
+Create a `jsconfig.json` file with following type acquisiton :
+```json
+{
+    "typeAcquisition": {
+        "include": [
+            "jest"
+        ]
+    }
+}
+```
+
+## Step 5
+Add code coverage report : back in the `package.json`, update the test script to include the flag `--coverage`
