@@ -5,6 +5,7 @@
     "build": "vite build",
     "serve": "vite preview",
     "test": "jest --watchAll --verbose",
+    "coverage": "jest --coverage",
     "e2e": "cypress open"
   },
   "devDependencies": {
