@@ -12,6 +12,13 @@ class Stack {
     this.top += 1;
     this.items[this.top] = value;
   }
+
+  pop() {
+    const item = this.items[this.top]
+    delete this.items[this.top]
+    this.top -= 1;
+    return item
+  }
 }
 
 describe('My Stack', () => {
@@ -36,5 +43,10 @@ describe('My Stack', () => {
     expect(stack.peek).toBe('🌽');
   });
 
-  it.todo('can pop off');
+  it('can pop off', () => {
+    stack.push('🥑');
+
+    expect(stack.pop()).toBe('🥑');
+    expect(stack.top).toBe(-1);
+  });
 });
