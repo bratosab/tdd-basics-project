@@ -1,7 +1,7 @@
 # JavaScript TDD Project
 
 ## Step 1 
-`npm init @vitejs/app` then select vanilla JS project.
+`npm create vite@latest` then select vanilla JS project.
 
 ## Step 2 
 `npm i jest`
