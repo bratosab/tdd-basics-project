@@ -1,6 +1,5 @@
 const { Stack } = require("../src/Stack");
 
-
 describe('My Stack', () => {
   let stack;
 
@@ -28,5 +27,6 @@ describe('My Stack', () => {
 
     expect(stack.pop()).toBe('🥑');
     expect(stack.top).toBe(-1);
+    expect(stack.items).toEqual({})
   });
 });

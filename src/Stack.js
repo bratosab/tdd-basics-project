@@ -17,6 +17,7 @@ class Stack {
       const item = this.items[this.top]
       delete this.items[this.top]
       this.top -= 1;
+      
       return item
     }
   }
